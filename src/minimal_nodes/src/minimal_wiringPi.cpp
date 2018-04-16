@@ -18,8 +18,6 @@ using namespace std;
 int main (int argc, char **argv)
 {
   int gpiopin = 18;
-  std_msgs::String msg;
-  std::stringstream ss;
   printf("Raspberry Pi wiringPi blink test\n");
 
   // *** ROS Stuff ****
@@ -38,6 +36,8 @@ int main (int argc, char **argv)
   ros::Rate loop_rate(10);
   while(ros::ok())
   {
+    std_msgs::String msg;
+    std::stringstream ss;
     printf("LED On\n");
     digitalWrite(gpiopin, 1);
     ss << "ON";
@@ -45,6 +45,8 @@ int main (int argc, char **argv)
     chatter_pub.publish(msg);
 
     delay(one_sec);
+    std_msgs::String msg;
+    std::stringstream ss;
     printf("LED Off\n");
     digitalWrite(gpiopin, 0);
     ss << "OFF";
