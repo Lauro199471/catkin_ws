@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.5.1, 2018-04-16T05:44:21. -->
+<!-- Written by QtCreator 4.5.1, 2018-04-16T07:30:20. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -105,14 +105,14 @@
      <value type="QString">CMAKE_PREFIX_PATH=/home/lauro199471/catkin_ws/devel:/opt/ros/kinetic</value>
      <value type="QString">LD_LIBRARY_PATH=/home/lauro199471/catkin_ws/devel/lib:/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu</value>
      <value type="QString">PATH=/opt/ros/kinetic/bin:/home/lauro199471/bin:/home/lauro199471/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin</value>
-     <value type="QString">PKG_CONFIG_PATH=/opt/ros/kinetic/lib/pkgconfig:/opt/ros/kinetic/lib/x86_64-linux-gnu/pkgconfig</value>
+     <value type="QString">PKG_CONFIG_PATH=/home/lauro199471/catkin_ws/devel/lib/pkgconfig:/opt/ros/kinetic/lib/pkgconfig:/opt/ros/kinetic/lib/x86_64-linux-gnu/pkgconfig</value>
      <value type="QString">PWD=/home/lauro199471/catkin_ws</value>
      <value type="QString">PYTHONPATH=/opt/ros/kinetic/lib/python2.7/dist-packages</value>
      <value type="QString">ROSLISP_PACKAGE_DIRECTORIES=/home/lauro199471/catkin_ws/devel/share/common-lisp</value>
      <value type="QString">ROS_DISTRO=kinetic</value>
      <value type="QString">ROS_ETC_DIR=/opt/ros/kinetic/etc/ros</value>
      <value type="QString">ROS_MASTER_URI=http://localhost:11311</value>
-     <value type="QString">ROS_PACKAGE_PATH=/home/lauro199471/catkin_ws/src:/opt/ros/kinetic/share</value>
+     <value type="QString">ROS_PACKAGE_PATH=/home/lauro199471/catkin_ws/src/minimal_nodes:/opt/ros/kinetic/share</value>
      <value type="QString">ROS_ROOT=/opt/ros/kinetic/share/ros</value>
      <value type="QString">ROS_VERSION=1</value>
      <value type="QString">SHLVL=2</value>
