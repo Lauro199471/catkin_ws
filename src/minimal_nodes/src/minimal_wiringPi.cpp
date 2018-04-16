@@ -27,6 +27,7 @@ int main (int argc, char **argv)
   // Always initialise wiringPi. Use wiringPiSys() if you don't need
   //	(or want) to run as root
   wiringPiSetupSys();
+  wiringPiSetupGpio(); // Initalize Pi GPIO
 
   pinMode(gpiopin, OUTPUT);
 
