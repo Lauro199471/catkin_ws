@@ -1,0 +1,9 @@
+<launch>
+  <param name="use_gui" value="true"/>
+  <!-- set these parameters on Parameter Server -->
+  <param name="seven_dof_arm" command="$(find xacro)/xacro.py $(find ros_robotics)/urdf/seven_dof_arm.xacro" />
+   <!-- Start 3 nodes: joint_state_publisher, robot_state_publisher and rviz -->
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+  <node name="rviz" pkg="rviz" type="rviz" required="true" />
+</launch>

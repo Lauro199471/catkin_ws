@@ -1,0 +1,8 @@
+prefix=/home/lauro199471/catkin_ws/devel
+
+Name: tf_lauro
+Description: Description of tf_lauro
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/lauro199471/catkin_ws/devel/lib 
+Requires: 

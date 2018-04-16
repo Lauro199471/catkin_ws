@@ -1,0 +1,8 @@
+prefix=/home/lauro199471/catkin_ws/devel
+
+Name: ros_robotics
+Description: Description of ros_robotics
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/lauro199471/catkin_ws/devel/lib 
+Requires: 
