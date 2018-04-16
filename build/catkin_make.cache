@@ -1,2 +1,0 @@
-minimal_nodes
--DCATKIN_DEVEL_PREFIX=/home/lauro199471/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/lauro199471/catkin_ws/install -G Unix Makefiles
