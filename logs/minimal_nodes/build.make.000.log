@@ -1,0 +1,35 @@
+[35m[1mScanning dependencies of target minimal_simulator[0m
+[35m[1mScanning dependencies of target minimal_pwm[0m
+[35m[1mScanning dependencies of target minimal_controller[0m
+[35m[1mScanning dependencies of target xbox_to_pwm[0m
+[35m[1mScanning dependencies of target minimal_wiringPi[0m
+[  7%] [32mBuilding CXX object CMakeFiles/minimal_pwm.dir/src/minimal_pwm.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/minimal_controller.dir/src/minimal_controller.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/minimal_simulator.dir/src/minimal_simulator.cpp.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/minimal_wiringPi.dir/src/minimal_wiringPi.cpp.o[0m
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/usr/local/lib/libwiringPi.so: not a directory
+[ 35%] [32mBuilding CXX object CMakeFiles/xbox_to_pwm.dir/src/xbox_to_pwm.cpp.o[0m
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/usr/local/lib/libwiringPi.so: not a directory
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/usr/local/lib/libwiringPi.so: not a directory
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/usr/local/lib/libwiringPi.so: not a directory
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/usr/local/lib/libwiringPi.so: not a directory
+[35m[1mScanning dependencies of target minimal_publisher[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/minimal_publisher.dir/src/minimal_publisher.cpp.o[0m
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/usr/local/lib/libwiringPi.so: not a directory
+[ 50%] [32m[1mLinking CXX executable minimal_pwm[0m
+[ 57%] [32m[1mLinking CXX executable minimal_wiringPi[0m
+[ 57%] Built target minimal_pwm
+[35m[1mScanning dependencies of target minimal_subscriber[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/minimal_subscriber.dir/src/minimal_subscriber.cpp.o[0m
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/usr/local/lib/libwiringPi.so: not a directory
+[ 64%] Built target minimal_wiringPi
+[ 71%] [32m[1mLinking CXX executable minimal_publisher[0m
+[ 78%] [32m[1mLinking CXX executable minimal_simulator[0m
+[ 85%] [32m[1mLinking CXX executable minimal_controller[0m
+[ 92%] [32m[1mLinking CXX executable xbox_to_pwm[0m
+[ 92%] Built target minimal_publisher
+[ 92%] Built target minimal_simulator
+[ 92%] Built target xbox_to_pwm
+[ 92%] Built target minimal_controller
+[100%] [32m[1mLinking CXX executable minimal_subscriber[0m
+[100%] Built target minimal_subscriber

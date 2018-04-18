@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/lauro199471/catkin_ws/devel/.private/spacenav_node/setup.sh
