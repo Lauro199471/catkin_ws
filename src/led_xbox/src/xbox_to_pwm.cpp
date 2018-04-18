@@ -30,7 +30,7 @@ int main(int argc, char **argv)
   pwmSetClock(384); //clock at 50kHz (20us tick)
   pwmSetRange(1000); //range at 1000 ticks (20ms)
 
-  pwmWrite(1, 75);  //theretically 50 (1ms) to 100 (2ms) on my servo 30-130 works ok
+  pwmWrite(gpiopin, 75);  //theretically 50 (1ms) to 100 (2ms) on my servo 30-130 works ok
 
   while(ros::ok()) // Ctrl-C Handler
   {
