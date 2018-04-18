@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.5.1, 2018-04-16T07:30:20. -->
+<!-- Written by QtCreator 4.5.1, 2018-04-18T04:31:23. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -70,13 +70,16 @@
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">CatkinMake Step</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">CatkinTools Step</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSCatkinMakeStep</value>
-      <value type="QString" key="ROSProjectManager.ROSCatkinMakeStep.CMakeArguments"></value>
-      <value type="QString" key="ROSProjectManager.ROSCatkinMakeStep.CatkinMakeArguments"></value>
-      <value type="QString" key="ROSProjectManager.ROSCatkinMakeStep.MakeArguments"></value>
-      <value type="int" key="ROSProjectManager.ROSCatkinMakeStep.Target">0</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSCatkinToolsStep</value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.ActiveProfile">default</value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CMakeArguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CatkinMakeArguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CatkinToolsArguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CatkinToolsWorkingDir">%{CurrentProject:Path}</value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.MakeArguments"></value>
+      <value type="int" key="ROSProjectManager.ROSCatkinToolsStep.Target">0</value>
      </valuemap>
      <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
@@ -86,13 +89,16 @@
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">CatkinMake Step</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">CatkinTools Step</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSCatkinMakeStep</value>
-      <value type="QString" key="ROSProjectManager.ROSCatkinMakeStep.CMakeArguments"></value>
-      <value type="QString" key="ROSProjectManager.ROSCatkinMakeStep.CatkinMakeArguments"></value>
-      <value type="QString" key="ROSProjectManager.ROSCatkinMakeStep.MakeArguments"></value>
-      <value type="int" key="ROSProjectManager.ROSCatkinMakeStep.Target">1</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSCatkinToolsStep</value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.ActiveProfile">default</value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CMakeArguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CatkinMakeArguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CatkinToolsArguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CatkinToolsWorkingDir">%{CurrentProject:Path}</value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.MakeArguments"></value>
+      <value type="int" key="ROSProjectManager.ROSCatkinToolsStep.Target">1</value>
      </valuemap>
      <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
@@ -112,7 +118,7 @@
      <value type="QString">ROS_DISTRO=kinetic</value>
      <value type="QString">ROS_ETC_DIR=/opt/ros/kinetic/etc/ros</value>
      <value type="QString">ROS_MASTER_URI=http://localhost:11311</value>
-     <value type="QString">ROS_PACKAGE_PATH=/home/lauro199471/catkin_ws/src/minimal_nodes:/opt/ros/kinetic/share</value>
+     <value type="QString">ROS_PACKAGE_PATH=/home/lauro199471/catkin_ws/src/HelloWorld:/home/lauro199471/catkin_ws/src/joystick_drivers/joy:/home/lauro199471/catkin_ws/src/joystick_drivers/joystick_drivers:/home/lauro199471/catkin_ws/src/led_xbox:/home/lauro199471/catkin_ws/src/minimal_nodes:/home/lauro199471/catkin_ws/src/joystick_drivers/ps3joy:/home/lauro199471/catkin_ws/src/joystick_drivers/spacenav_node:/opt/ros/kinetic/share</value>
      <value type="QString">ROS_ROOT=/opt/ros/kinetic/share/ros</value>
      <value type="QString">ROS_VERSION=1</value>
      <value type="QString">SHLVL=2</value>
@@ -122,7 +128,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Debug</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Debug</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSBuildConfiguration</value>
-    <value type="int" key="ROSProjectManager.ROSBuildConfiguration.BuildSystem">0</value>
+    <value type="int" key="ROSProjectManager.ROSBuildConfiguration.BuildSystem">1</value>
     <value type="int" key="ROSProjectManager.ROSBuildConfiguration.CMakeBuildType">0</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
@@ -130,13 +136,16 @@
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">CatkinMake Step</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">CatkinTools Step</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSCatkinMakeStep</value>
-      <value type="QString" key="ROSProjectManager.ROSCatkinMakeStep.CMakeArguments"></value>
-      <value type="QString" key="ROSProjectManager.ROSCatkinMakeStep.CatkinMakeArguments"></value>
-      <value type="QString" key="ROSProjectManager.ROSCatkinMakeStep.MakeArguments"></value>
-      <value type="int" key="ROSProjectManager.ROSCatkinMakeStep.Target">0</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSCatkinToolsStep</value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.ActiveProfile">default</value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CMakeArguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CatkinMakeArguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CatkinToolsArguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CatkinToolsWorkingDir">%{CurrentProject:Path}</value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.MakeArguments"></value>
+      <value type="int" key="ROSProjectManager.ROSCatkinToolsStep.Target">0</value>
      </valuemap>
      <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
@@ -146,13 +155,16 @@
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">CatkinMake Step</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">CatkinTools Step</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSCatkinMakeStep</value>
-      <value type="QString" key="ROSProjectManager.ROSCatkinMakeStep.CMakeArguments"></value>
-      <value type="QString" key="ROSProjectManager.ROSCatkinMakeStep.CatkinMakeArguments"></value>
-      <value type="QString" key="ROSProjectManager.ROSCatkinMakeStep.MakeArguments"></value>
-      <value type="int" key="ROSProjectManager.ROSCatkinMakeStep.Target">1</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSCatkinToolsStep</value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.ActiveProfile">default</value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CMakeArguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CatkinMakeArguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CatkinToolsArguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CatkinToolsWorkingDir">%{CurrentProject:Path}</value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.MakeArguments"></value>
+      <value type="int" key="ROSProjectManager.ROSCatkinToolsStep.Target">1</value>
      </valuemap>
      <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
@@ -165,7 +177,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Release</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Release</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSBuildConfiguration</value>
-    <value type="int" key="ROSProjectManager.ROSBuildConfiguration.BuildSystem">0</value>
+    <value type="int" key="ROSProjectManager.ROSBuildConfiguration.BuildSystem">1</value>
     <value type="int" key="ROSProjectManager.ROSBuildConfiguration.CMakeBuildType">1</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.2">
@@ -173,13 +185,16 @@
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">CatkinMake Step</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">CatkinTools Step</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSCatkinMakeStep</value>
-      <value type="QString" key="ROSProjectManager.ROSCatkinMakeStep.CMakeArguments"></value>
-      <value type="QString" key="ROSProjectManager.ROSCatkinMakeStep.CatkinMakeArguments"></value>
-      <value type="QString" key="ROSProjectManager.ROSCatkinMakeStep.MakeArguments"></value>
-      <value type="int" key="ROSProjectManager.ROSCatkinMakeStep.Target">0</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSCatkinToolsStep</value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.ActiveProfile">default</value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CMakeArguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CatkinMakeArguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CatkinToolsArguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CatkinToolsWorkingDir">%{CurrentProject:Path}</value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.MakeArguments"></value>
+      <value type="int" key="ROSProjectManager.ROSCatkinToolsStep.Target">0</value>
      </valuemap>
      <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
@@ -189,13 +204,16 @@
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">CatkinMake Step</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">CatkinTools Step</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSCatkinMakeStep</value>
-      <value type="QString" key="ROSProjectManager.ROSCatkinMakeStep.CMakeArguments"></value>
-      <value type="QString" key="ROSProjectManager.ROSCatkinMakeStep.CatkinMakeArguments"></value>
-      <value type="QString" key="ROSProjectManager.ROSCatkinMakeStep.MakeArguments"></value>
-      <value type="int" key="ROSProjectManager.ROSCatkinMakeStep.Target">1</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSCatkinToolsStep</value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.ActiveProfile">default</value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CMakeArguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CatkinMakeArguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CatkinToolsArguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CatkinToolsWorkingDir">%{CurrentProject:Path}</value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.MakeArguments"></value>
+      <value type="int" key="ROSProjectManager.ROSCatkinToolsStep.Target">1</value>
      </valuemap>
      <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
@@ -208,7 +226,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Release with Debug Information</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Release with Debug Information</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSBuildConfiguration</value>
-    <value type="int" key="ROSProjectManager.ROSBuildConfiguration.BuildSystem">0</value>
+    <value type="int" key="ROSProjectManager.ROSBuildConfiguration.BuildSystem">1</value>
     <value type="int" key="ROSProjectManager.ROSBuildConfiguration.CMakeBuildType">2</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.3">
@@ -216,13 +234,16 @@
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">CatkinMake Step</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">CatkinTools Step</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSCatkinMakeStep</value>
-      <value type="QString" key="ROSProjectManager.ROSCatkinMakeStep.CMakeArguments"></value>
-      <value type="QString" key="ROSProjectManager.ROSCatkinMakeStep.CatkinMakeArguments"></value>
-      <value type="QString" key="ROSProjectManager.ROSCatkinMakeStep.MakeArguments"></value>
-      <value type="int" key="ROSProjectManager.ROSCatkinMakeStep.Target">0</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSCatkinToolsStep</value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.ActiveProfile">default</value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CMakeArguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CatkinMakeArguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CatkinToolsArguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CatkinToolsWorkingDir">%{CurrentProject:Path}</value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.MakeArguments"></value>
+      <value type="int" key="ROSProjectManager.ROSCatkinToolsStep.Target">0</value>
      </valuemap>
      <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
@@ -232,13 +253,16 @@
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">CatkinMake Step</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">CatkinTools Step</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSCatkinMakeStep</value>
-      <value type="QString" key="ROSProjectManager.ROSCatkinMakeStep.CMakeArguments"></value>
-      <value type="QString" key="ROSProjectManager.ROSCatkinMakeStep.CatkinMakeArguments"></value>
-      <value type="QString" key="ROSProjectManager.ROSCatkinMakeStep.MakeArguments"></value>
-      <value type="int" key="ROSProjectManager.ROSCatkinMakeStep.Target">1</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSCatkinToolsStep</value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.ActiveProfile">default</value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CMakeArguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CatkinMakeArguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CatkinToolsArguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CatkinToolsWorkingDir">%{CurrentProject:Path}</value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.MakeArguments"></value>
+      <value type="int" key="ROSProjectManager.ROSCatkinToolsStep.Target">1</value>
      </valuemap>
      <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
@@ -251,7 +275,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Minimum Size Release</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Minimum Size Release</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSBuildConfiguration</value>
-    <value type="int" key="ROSProjectManager.ROSBuildConfiguration.BuildSystem">0</value>
+    <value type="int" key="ROSProjectManager.ROSBuildConfiguration.BuildSystem">1</value>
     <value type="int" key="ROSProjectManager.ROSBuildConfiguration.CMakeBuildType">3</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.4">
@@ -259,13 +283,16 @@
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">CatkinMake Step</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">CatkinTools Step</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSCatkinMakeStep</value>
-      <value type="QString" key="ROSProjectManager.ROSCatkinMakeStep.CMakeArguments"></value>
-      <value type="QString" key="ROSProjectManager.ROSCatkinMakeStep.CatkinMakeArguments"></value>
-      <value type="QString" key="ROSProjectManager.ROSCatkinMakeStep.MakeArguments"></value>
-      <value type="int" key="ROSProjectManager.ROSCatkinMakeStep.Target">0</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSCatkinToolsStep</value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.ActiveProfile">default</value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CMakeArguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CatkinMakeArguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CatkinToolsArguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CatkinToolsWorkingDir">%{CurrentProject:Path}</value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.MakeArguments"></value>
+      <value type="int" key="ROSProjectManager.ROSCatkinToolsStep.Target">0</value>
      </valuemap>
      <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
@@ -275,13 +302,16 @@
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">CatkinMake Step</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">CatkinTools Step</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSCatkinMakeStep</value>
-      <value type="QString" key="ROSProjectManager.ROSCatkinMakeStep.CMakeArguments"></value>
-      <value type="QString" key="ROSProjectManager.ROSCatkinMakeStep.CatkinMakeArguments"></value>
-      <value type="QString" key="ROSProjectManager.ROSCatkinMakeStep.MakeArguments"></value>
-      <value type="int" key="ROSProjectManager.ROSCatkinMakeStep.Target">1</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSCatkinToolsStep</value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.ActiveProfile">default</value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CMakeArguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CatkinMakeArguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CatkinToolsArguments"></value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.CatkinToolsWorkingDir">%{CurrentProject:Path}</value>
+      <value type="QString" key="ROSProjectManager.ROSCatkinToolsStep.MakeArguments"></value>
+      <value type="int" key="ROSProjectManager.ROSCatkinToolsStep.Target">1</value>
      </valuemap>
      <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
@@ -294,7 +324,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">User Defined</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">User Defined</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSBuildConfiguration</value>
-    <value type="int" key="ROSProjectManager.ROSBuildConfiguration.BuildSystem">0</value>
+    <value type="int" key="ROSProjectManager.ROSBuildConfiguration.BuildSystem">1</value>
     <value type="int" key="ROSProjectManager.ROSBuildConfiguration.CMakeBuildType">4</value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.BuildConfigurationCount">5</value>
@@ -367,9 +397,9 @@
       <value type="QString" key="ROSProjectManager.ROSGenericStep.Arguments"></value>
       <value type="QString" key="ROSProjectManager.ROSGenericStep.Command">rosrun</value>
       <value type="bool" key="ROSProjectManager.ROSGenericStep.DebugContinueOnAttach">false</value>
-      <value type="QString" key="ROSProjectManager.ROSGenericStep.Package">tf_lauro</value>
-      <value type="QString" key="ROSProjectManager.ROSGenericStep.Target">tf_broadcaster</value>
-      <value type="QString" key="ROSProjectManager.ROSGenericStep.TargetPath">/home/lauro199471/catkin_ws/devel/lib/tf_lauro/tf_broadcaster</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.Package">led_xbox</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.Target">xbox_to_pwm</value>
+      <value type="QString" key="ROSProjectManager.ROSGenericStep.TargetPath">/home/lauro199471/catkin_ws/devel/lib/led_xbox/xbox_to_pwm</value>
      </valuemap>
      <value type="int" key="ProjectExplorer.RunStepList.StepsCount">1</value>
     </valuemap>

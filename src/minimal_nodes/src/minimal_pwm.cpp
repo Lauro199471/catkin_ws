@@ -12,11 +12,11 @@ GPIO PIN    RPi pin  PWM Channel    ALT FUN
 */
 
 // The Raspberry Pi PWM clock has a base frequency of 19.2 MHz.
-// pwmFrequency in Hz = 19.2e6 Hz / pwmClock / pwmRange.
+// pwmFrequency in Hz = 19,200,000 Hz / pwmClock / pwmRange.
 // pwmSetClock() seems to go from 2 to 4095
 // pwmSetRange() is up to 4096 - The PWM range is effectively the 'resolution' or number of possible 'divisions' of each pulse. The more divisions the higher the resolution and thus more states encodable for a given pulse width.
 
-// 50 Hz = 19.2e6 Hz / 1920 / 200
+// 50 Hz = 19.2e6 Hz / 1920 / 4095
 
 #include<ros/ros.h>   // Include ROS Library
 #include <wiringPi.h> // Include wiringPi Library
@@ -39,9 +39,10 @@ int main(int argc, char **argv)
 
   pinMode(18,PWM_OUTPUT); // pinMode([pin] , [mode]): mode = INPUT , OUTPUT , PWM_OUTPUT
 
-  pwmSetMode(PWM_MODE_BAL);// The PWM generator can run in 2 modes – “balanced” and “mark:space”
-  //
-  pwmSetRange(1024);// This sets the range register in the PWM generator. 0 ~ 1024
+  pwmSetMode(PWM_MODE_MS);// The PWM generator can run in 2 modes – “balanced” and “mark:space”
+
+
+  pwmSetRange(2);// This sets the range register in the PWM generator. 0 ~ 2
   pwmSetClock(32); // This sets the divisor for the PWM clock.
 
   while(ros::ok()) // Ctrl-C Handler
