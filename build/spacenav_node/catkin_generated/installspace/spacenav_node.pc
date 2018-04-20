@@ -1,8 +1,0 @@
-prefix=/home/lauro199471/catkin_ws/install
-
-Name: spacenav_node
-Description: Description of spacenav_node
-Version: 1.11.0
-Cflags: 
-Libs: -L/home/lauro199471/catkin_ws/install/lib 
-Requires: roscpp geometry_msgs sensor_msgs

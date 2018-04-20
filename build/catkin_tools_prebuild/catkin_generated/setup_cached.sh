@@ -8,6 +8,8 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/lauro199471/catkin_ws/devel/.private/catkin_tools_prebuild:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu"
+export PKG_CONFIG_PATH="/opt/ros/kinetic/lib/pkgconfig:/opt/ros/kinetic/lib/x86_64-linux-gnu/pkgconfig"
 export PWD="/home/lauro199471/catkin_ws/build/catkin_tools_prebuild"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/lauro199471/catkin_ws/devel/.private/catkin_tools_prebuild/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/lauro199471/catkin_ws/build/catkin_tools_prebuild:$ROS_PACKAGE_PATH"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/lauro199471/catkin_ws/devel/.private/catkin_tools_prebuild/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/lauro199471/catkin_ws/build/catkin_tools_prebuild:/home/lauro199471/catkin_ws/src/joystick_drivers/joy:/home/lauro199471/catkin_ws/src/joystick_drivers/joystick_drivers:/home/lauro199471/catkin_ws/src/minimal_nodes:/home/lauro199471/catkin_ws/src/joystick_drivers/ps3joy:/opt/ros/kinetic/share"
