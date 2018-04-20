@@ -13,8 +13,12 @@ GPIO PIN    RPi pin  PWM Channel    ALT FUN
 
 // The Raspberry Pi PWM clock has a base frequency of 19.2 MHz.
 // pwmFrequency in Hz = 19,200,000 Hz / pwmClock / pwmRange.
+
 // pwmSetClock() seems to go from 2 to 4095
+//
+
 // pwmSetRange() is up to 4096 - The PWM range is effectively the 'resolution' or number of possible 'divisions' of each pulse. The more divisions the higher the resolution and thus more states encodable for a given pulse width.
+// ^- EX: setRange(4) = Duty Cycles of 0% 25% 50% 75% 100% : 0/4 1/4 2/4 3/4 4/4 Note: 200 is good enough
 
 // 50 Hz = 19.2e6 Hz / 1920 / 4095
 
@@ -39,7 +43,8 @@ int main(int argc, char **argv)
 
   pinMode(18,PWM_OUTPUT); // pinMode([pin] , [mode]): mode = INPUT , OUTPUT , PWM_OUTPUT
 
-  pwmSetMode(PWM_MODE_MS);// The PWM generator can run in 2 modes – “balanced” and “mark:space”
+  pwmSetMode(PWM_MODE_MS);// The PWM generator can run in 2 modes – “balanced”(NEVER USE: BroadCom tries to make duty cycle
+  // 50/50) and “mark:space” ( traditional PWM)
 
 
   pwmSetRange(2);// This sets the range register in the PWM generator. 0 ~ 2

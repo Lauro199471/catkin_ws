@@ -14,8 +14,8 @@ int main(int argc, char **argv)
 {
 
   int gpiopin = 18;
-  int pwmClock = 384;
-  int pwmRange = 1000;
+  int pwmClock = 1920;
+  int pwmRange = 200;
 
   ros::init(argc, argv, "listener");
   ros::NodeHandle n;
@@ -27,17 +27,20 @@ int main(int argc, char **argv)
   pinMode(gpiopin,OUTPUT);
 
   pwmSetMode(PWM_MODE_MS);
-  pwmSetClock(384); //clock at 50kHz (20us tick)
-  pwmSetRange(1000); //range at 1000 ticks (20ms)
 
-  pwmWrite(gpiopin, 75);  //theretically 50 (1ms) to 100 (2ms) on my servo 30-130 works ok
+  //clock at 50Hz (20ms tick)
+  pwmSetClock(pwmClock);
+  pwmSetRange(pwmRange); //range at 200 ticks (20ms)
+
+  pwmWrite(gpiopin, 15);  //15 (1.5ms)
 
   while(ros::ok()) // Ctrl-C Handler
   {
-   // pwmWrite(gpiopin,999);
+
   }
 
-  pwmWrite(18,0);
+  pwmWrite(gpiopin,0);
+
   cout << "Finished" << endl;
   return 0;
 }
