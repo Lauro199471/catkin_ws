@@ -36,7 +36,7 @@ int main(int argc, char **argv)
 
   while(ros::ok()) // Ctrl-C Handler
   {
-
+    pwmWrite(gpiopin, 15);  //15 (1.5ms)
   }
 
   pwmWrite(gpiopin,0);
