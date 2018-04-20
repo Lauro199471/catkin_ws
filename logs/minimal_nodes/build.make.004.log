@@ -1,0 +1,24 @@
+[35m[1mScanning dependencies of target minimal_pwm[0m
+[35m[1mScanning dependencies of target xbox_to_pwm[0m
+[  7%] [32mBuilding CXX object CMakeFiles/minimal_pwm.dir/src/minimal_pwm.cpp.o[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/xbox_to_pwm.dir/src/xbox_to_pwm.cpp.o[0m
+[ 28%] Built target minimal_publisher
+[ 42%] Built target minimal_simulator
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/usr/local/lib/libwiringPi.so: not a directory
+[ 57%] Built target minimal_wiringPi
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/usr/local/lib/libwiringPi.so: not a directory
+[ 71%] Built target minimal_controller
+[ 85%] Built target minimal_subscriber
+[01m[K/home/lauro199471/catkin_ws/src/minimal_nodes/src/minimal_pwm.cpp:[m[K In function '[01m[Kint main(int, char**)[m[K':
+[01m[K/home/lauro199471/catkin_ws/src/minimal_nodes/src/minimal_pwm.cpp:13:3:[m[K [01;31m[Kerror: [m[Kexpected '[01m[K,[m[K' or '[01m[K;[m[K' before '[01m[Kros[m[K'
+   ros::init(argc,argv,"minimal_pwm"); //name this node
+[01;32m[K   ^[m[K
+CMakeFiles/minimal_pwm.dir/build.make:62: recipe for target 'CMakeFiles/minimal_pwm.dir/src/minimal_pwm.cpp.o' failed
+make[2]: *** [CMakeFiles/minimal_pwm.dir/src/minimal_pwm.cpp.o] Error 1
+CMakeFiles/Makefile2:104: recipe for target 'CMakeFiles/minimal_pwm.dir/all' failed
+make[1]: *** [CMakeFiles/minimal_pwm.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 92%] [32m[1mLinking CXX executable xbox_to_pwm[0m
+[ 92%] Built target xbox_to_pwm
+Makefile:138: recipe for target 'all' failed
+make: *** [all] Error 2

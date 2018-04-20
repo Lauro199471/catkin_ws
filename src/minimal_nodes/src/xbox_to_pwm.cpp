@@ -23,7 +23,7 @@ int main(int argc, char **argv)
   ros::Subscriber sub = n.subscribe("joy", 1000, chatterCallback);
   ros::spin();
 
-  wiringPiSetupGpio();
+  wiringPiSetup();
   pinMode(gpiopin,OUTPUT);
 
   pwmSetMode(PWM_MODE_MS);
