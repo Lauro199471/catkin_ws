@@ -47,14 +47,14 @@ int main(int argc, char **argv)
   // 50/50) and “mark:space” ( traditional PWM)
 
 
-  pwmSetRange(2);// This sets the range register in the PWM generator. 0 ~ 2
-  pwmSetClock(32); // This sets the divisor for the PWM clock.
+  pwmSetRange(4095);// This sets the range register in the PWM generator. 0 ~ 2
+  pwmSetClock(4095); // This sets the divisor for the PWM clock.
 
   while(ros::ok()) // Ctrl-C Handler
   {
-    pwmWrite(18,i);
-    delay(2);
-    i = (i + 1) % 1024;
+    pwmWrite(18,400);
+    //delay(2);
+    //i = (i + 1) % 1024;
   }
 
   pwmWrite(18,0);
