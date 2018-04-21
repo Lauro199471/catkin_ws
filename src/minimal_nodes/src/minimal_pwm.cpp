@@ -6,12 +6,12 @@
 
 using namespace std;
 
-int pos = 0;
+int pos = 150;
 
 void myCallback(const std_msgs::UInt16& message_holder)
 {
   cout << "I heard: " << message_holder.data << endl;
-  pos = message_holder.data;
+  //pos = message_holder.data;
 }
 
 int main(int argc, char **argv)
@@ -33,14 +33,17 @@ int main(int argc, char **argv)
   pwmSetMode (PWM_MODE_MS);
 
   //pwmFrequency in Hz = 19.2e6 Hz / pwmClock / pwmRange.
-  // 50Hz ---> 20ms per cycle. 20ms / 200 units = 0.1ms per unit
+  // 50Hz ---> 20ms per cycle. 20ms / 2000 units = 0.01ms per unit
    pwmSetRange (2000);
    pwmSetClock (192);
 
 
-  pwmWrite(18,150); // 1.5 ms (0 degrees)
-  delay(5000);
-  pwmWrite(18,250); // 2.0 ms (90 degrees)
+  pwmWrite(18,pos); // 1.5 ms (0 degrees) 150 * .01ms = 1.5ms
+  //delay(5000);
+  //pwmWrite(18,250); // 2.0 ms (90 degrees)
+  ros::spin();
+
+  pwmWrite(18,0); // 0 * .01ms = 0ms
 
   return 0;
 }
