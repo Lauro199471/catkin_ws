@@ -25,13 +25,14 @@ int main(int argc, char **argv)
   pwmSetMode(PWM_MODE_MS);
 
   //clock at 50Hz (20ms tick)... pwmFrequency in Hz = 19.2e6 Hz / pwmClock / pwmRange.
-  pwmSetClock(1920);
-  pwmSetRange(200); //range at 200 ticks =>0.4ms per ticks
+  pwmSetClock(192);
+  pwmSetRange(2000); //range at 2000 ticks =>0.04ms per ticks
+  pwmWrite(18, 150); // .004 * 150 = .6ms
 
   ros::Rate r(10); // 10 hz
   while(1)
   {
-    pwmWrite(18, pos);
+
     ros::spinOnce();
     r.sleep();
   }
