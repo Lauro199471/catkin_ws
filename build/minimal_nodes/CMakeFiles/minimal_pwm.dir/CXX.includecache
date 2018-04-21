@@ -9,13 +9,9 @@
 /home/lauro199471/catkin_ws/src/minimal_nodes/src/minimal_pwm.cpp
 ros/ros.h
 -
-wiringPi.h
+std_msgs/UInt16.h
 -
 iostream
--
-softPwm.h
--
-std_msgs/UInt16.h
 -
 
 /opt/ros/kinetic/include/ros/advertise_options.h
