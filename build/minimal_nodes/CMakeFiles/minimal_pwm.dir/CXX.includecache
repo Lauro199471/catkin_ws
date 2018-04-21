@@ -13,6 +13,8 @@ std_msgs/UInt16.h
 -
 iostream
 -
+wiringPi.h
+-
 
 /opt/ros/kinetic/include/ros/advertise_options.h
 ros/forwards.h

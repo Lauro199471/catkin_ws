@@ -21,7 +21,7 @@ int main(int argc, char **argv)
   ros::NodeHandle n;
 
   ros::Subscriber sub = n.subscribe("joy", 1000, chatterCallback);
-  ros::spin();
+ // ros::spin();
 
   wiringPiSetup();
   pinMode(gpiopin,OUTPUT);
