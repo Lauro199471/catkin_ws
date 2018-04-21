@@ -30,7 +30,7 @@ int main(int argc, char **argv)
   pwmWrite(18, 150); // .004 * 150 = .6ms
 
   ros::Rate r(10); // 10 hz
-  while(1)
+  while(ros::ok())
   {
 
     ros::spinOnce();
