@@ -1,46 +1,32 @@
-#include "ros/ros.h"
-#include "sensor_msgs/Joy.h"
+#include<ros/ros.h>   // Include ROS Library
+#include <wiringPi.h> // Include wiringPi Library
 #include <iostream>
-#include <wiringPi.h>
+#include <softPwm.h>
 
 using namespace std;
 
-void chatterCallback(const sensor_msgs::Joy::ConstPtr& msg)
-{
-  cout << "Right Trigger: " << (msg->axes[2] + 1) * 500 << endl;
-}
-
 int main(int argc, char **argv)
 {
+  ros::init(argc,argv,"minimal_pwm"); //name this node
+  // when this compiled code is run, ROS will recognize it as a node called "minimal_wiringPi"
 
-  int gpiopin = 18;
-  int pwmClock = 1920;
-  int pwmRange = 200;
+  ros::NodeHandle n; // need this to establish communications with our new node
 
-  ros::init(argc, argv, "listener");
-  ros::NodeHandle n;
+  cout << "Raspberry Pi wiringPi test program\n";
+  wiringPiSetupGpio(); // Initalize Pi
 
-  ros::Subscriber sub = n.subscribe("joy", 1000, chatterCallback);
-  ros::spin();
+  pinMode (18, PWM_OUTPUT) ;
+  pwmSetMode (PWM_MODE_MS);
 
-  wiringPiSetup();
-  pinMode(gpiopin,OUTPUT);
+  //pwmFrequency in Hz = 19.2e6 Hz / pwmClock / pwmRange.
 
-  pwmSetMode(PWM_MODE_MS);
+  pwmSetRange (2000);
+  pwmSetClock (192);
 
-  //clock at 50Hz (20ms tick)
-  pwmSetClock(pwmClock);
-  pwmSetRange(pwmRange); //range at 200 ticks (20ms)
+  // 50Hz ---> 20ms per cycle. 20ms / 200 units = 0.1ms per unit
+  pwmWrite(18,150);
 
-  pwmWrite(gpiopin, 15);  //15 (1.5ms)
-
-  while(ros::ok()) // Ctrl-C Handler
-  {
-    pwmWrite(gpiopin, 15);  //15 (1.5ms)
-  }
-
-  pwmWrite(gpiopin,0);
-
-  cout << "Finished" << endl;
+  delay(1000);
+  pwmWrite(18,200);
   return 0;
 }

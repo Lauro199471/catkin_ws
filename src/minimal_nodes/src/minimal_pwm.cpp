@@ -17,10 +17,19 @@ int main(int argc, char **argv)
 
   pinMode (18, PWM_OUTPUT) ;
   pwmSetMode (PWM_MODE_MS);
+
+  //pwmFrequency in Hz = 19.2e6 Hz / pwmClock / pwmRange.
+
   pwmSetRange (2000);
   pwmSetClock (192);
-  pwmWrite(18,150);
+
+  // 50Hz ---> 20ms per cycle. 20ms / 200 units = 0.1ms per unit
+  pwmWrite(18,15); // 1.5 ms (0 degrees)
   delay(1000);
-  pwmWrite(18,200);
+  pwmWrite(18,20); // 2.0 ms (90 degrees)
+  delay(1000);
+  pwmWrite(18,15); // 1.5 ms (0 degrees)
+  delay(1000);
+  pwmWrite(18,10); // 1.0 ms (-90 degrees)
   return 0;
 }
