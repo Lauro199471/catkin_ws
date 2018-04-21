@@ -1,0 +1,11 @@
+[35m[1mScanning dependencies of target xbox_to_pwm[0m
+[ 28%] Built target minimal_simulator
+[ 28%] Built target minimal_pwm
+[ 71%] Built target minimal_subscriber
+[ 71%] Built target minimal_publisher
+[ 71%] Built target minimal_controller
+[ 78%] [32mBuilding CXX object CMakeFiles/xbox_to_pwm.dir/src/xbox_to_pwm.cpp.o[0m
+[ 92%] Built target minimal_wiringPi
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/usr/local/lib/libwiringPi.so: not a directory
+[100%] [32m[1mLinking CXX executable xbox_to_pwm[0m
+[100%] Built target xbox_to_pwm

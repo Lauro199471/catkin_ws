@@ -58,7 +58,7 @@ CMakeFiles/minimal_publisher.dir/src/minimal_publisher.cpp.o: /opt/ros/kinetic/i
 CMakeFiles/minimal_publisher.dir/src/minimal_publisher.cpp.o: /opt/ros/kinetic/include/ros/wall_timer.h
 CMakeFiles/minimal_publisher.dir/src/minimal_publisher.cpp.o: /opt/ros/kinetic/include/ros/wall_timer_options.h
 CMakeFiles/minimal_publisher.dir/src/minimal_publisher.cpp.o: /opt/ros/kinetic/include/rosconsole/macros_generated.h
-CMakeFiles/minimal_publisher.dir/src/minimal_publisher.cpp.o: /opt/ros/kinetic/include/std_msgs/Int8.h
+CMakeFiles/minimal_publisher.dir/src/minimal_publisher.cpp.o: /opt/ros/kinetic/include/std_msgs/UInt16.h
 CMakeFiles/minimal_publisher.dir/src/minimal_publisher.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h
 CMakeFiles/minimal_publisher.dir/src/minimal_publisher.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcValue.h
 

@@ -20,6 +20,7 @@ CMakeFiles/minimal_pwm.dir/src/minimal_pwm.cpp.o: /opt/ros/kinetic/include/ros/m
 CMakeFiles/minimal_pwm.dir/src/minimal_pwm.cpp.o: /opt/ros/kinetic/include/ros/message.h
 CMakeFiles/minimal_pwm.dir/src/minimal_pwm.cpp.o: /opt/ros/kinetic/include/ros/message_event.h
 CMakeFiles/minimal_pwm.dir/src/minimal_pwm.cpp.o: /opt/ros/kinetic/include/ros/message_forward.h
+CMakeFiles/minimal_pwm.dir/src/minimal_pwm.cpp.o: /opt/ros/kinetic/include/ros/message_operations.h
 CMakeFiles/minimal_pwm.dir/src/minimal_pwm.cpp.o: /opt/ros/kinetic/include/ros/message_traits.h
 CMakeFiles/minimal_pwm.dir/src/minimal_pwm.cpp.o: /opt/ros/kinetic/include/ros/names.h
 CMakeFiles/minimal_pwm.dir/src/minimal_pwm.cpp.o: /opt/ros/kinetic/include/ros/node_handle.h
@@ -57,6 +58,7 @@ CMakeFiles/minimal_pwm.dir/src/minimal_pwm.cpp.o: /opt/ros/kinetic/include/ros/t
 CMakeFiles/minimal_pwm.dir/src/minimal_pwm.cpp.o: /opt/ros/kinetic/include/ros/wall_timer.h
 CMakeFiles/minimal_pwm.dir/src/minimal_pwm.cpp.o: /opt/ros/kinetic/include/ros/wall_timer_options.h
 CMakeFiles/minimal_pwm.dir/src/minimal_pwm.cpp.o: /opt/ros/kinetic/include/rosconsole/macros_generated.h
+CMakeFiles/minimal_pwm.dir/src/minimal_pwm.cpp.o: /opt/ros/kinetic/include/std_msgs/UInt16.h
 CMakeFiles/minimal_pwm.dir/src/minimal_pwm.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h
 CMakeFiles/minimal_pwm.dir/src/minimal_pwm.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcValue.h
 

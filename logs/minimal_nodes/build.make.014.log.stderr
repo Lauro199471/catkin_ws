@@ -1,0 +1,14 @@
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/usr/local/lib/libwiringPi.so: not a directory
+/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make[2]: *** [xbox_to_pwm] Error 1
+make[1]: *** [CMakeFiles/xbox_to_pwm.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[01m[K/home/lauro199471/catkin_ws/src/minimal_nodes/src/minimal_pwm.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/lauro199471/catkin_ws/src/minimal_nodes/src/minimal_pwm.cpp:17:50:[m[K [01;31m[Kerror: [m[K‘[01m[KchatterCallback[m[K’ was not declared in this scope
+   ros::Subscriber sub = n.subscribe("joy", 1000, chatterCallback);
+[01;32m[K                                                  ^[m[K
+make[2]: *** [CMakeFiles/minimal_pwm.dir/src/minimal_pwm.cpp.o] Error 1
+make[1]: *** [CMakeFiles/minimal_pwm.dir/all] Error 2
+make: *** [all] Error 2

@@ -20,6 +20,7 @@ CMakeFiles/xbox_to_pwm.dir/src/xbox_to_pwm.cpp.o: /opt/ros/kinetic/include/ros/m
 CMakeFiles/xbox_to_pwm.dir/src/xbox_to_pwm.cpp.o: /opt/ros/kinetic/include/ros/message.h
 CMakeFiles/xbox_to_pwm.dir/src/xbox_to_pwm.cpp.o: /opt/ros/kinetic/include/ros/message_event.h
 CMakeFiles/xbox_to_pwm.dir/src/xbox_to_pwm.cpp.o: /opt/ros/kinetic/include/ros/message_forward.h
+CMakeFiles/xbox_to_pwm.dir/src/xbox_to_pwm.cpp.o: /opt/ros/kinetic/include/ros/message_operations.h
 CMakeFiles/xbox_to_pwm.dir/src/xbox_to_pwm.cpp.o: /opt/ros/kinetic/include/ros/message_traits.h
 CMakeFiles/xbox_to_pwm.dir/src/xbox_to_pwm.cpp.o: /opt/ros/kinetic/include/ros/names.h
 CMakeFiles/xbox_to_pwm.dir/src/xbox_to_pwm.cpp.o: /opt/ros/kinetic/include/ros/node_handle.h
@@ -57,6 +58,8 @@ CMakeFiles/xbox_to_pwm.dir/src/xbox_to_pwm.cpp.o: /opt/ros/kinetic/include/ros/t
 CMakeFiles/xbox_to_pwm.dir/src/xbox_to_pwm.cpp.o: /opt/ros/kinetic/include/ros/wall_timer.h
 CMakeFiles/xbox_to_pwm.dir/src/xbox_to_pwm.cpp.o: /opt/ros/kinetic/include/ros/wall_timer_options.h
 CMakeFiles/xbox_to_pwm.dir/src/xbox_to_pwm.cpp.o: /opt/ros/kinetic/include/rosconsole/macros_generated.h
+CMakeFiles/xbox_to_pwm.dir/src/xbox_to_pwm.cpp.o: /opt/ros/kinetic/include/sensor_msgs/Joy.h
+CMakeFiles/xbox_to_pwm.dir/src/xbox_to_pwm.cpp.o: /opt/ros/kinetic/include/std_msgs/Header.h
 CMakeFiles/xbox_to_pwm.dir/src/xbox_to_pwm.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h
 CMakeFiles/xbox_to_pwm.dir/src/xbox_to_pwm.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcValue.h
 
