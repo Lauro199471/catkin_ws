@@ -1,7 +1,0 @@
-[ 42%] Built target minimal_publisher
-[ 50%] Built target minimal_pwm
-[ 50%] Built target xbox_to_pwm
-[ 57%] Built target minimal_wiringPi
-[ 71%] Built target minimal_simulator
-[ 85%] Built target minimal_subscriber
-[100%] Built target minimal_controller

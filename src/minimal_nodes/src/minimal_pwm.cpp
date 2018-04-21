@@ -6,20 +6,18 @@
 
 using namespace std;
 
+int pos = 0;
 
 void chatterCallback(const std_msgs::UInt16::ConstPtr& msg)
 {
   cout << "I heard: " << msg->data << endl;
-  pwmWrite(18,msg->data);
+  pos = msg->data;
 }
 
 int main(int argc, char **argv)
 {
   cout << "Raspberry Pi wiringPi test program\n";
-  wiringPiSetupGpio(); // Initalize Pi
 
-  pinMode (18, PWM_OUTPUT) ;
-  pwmSetMode (PWM_MODE_MS);
 
   //pwmFrequency in Hz = 19.2e6 Hz / pwmClock / pwmRange.
   // pwmSetRange (200);
@@ -29,8 +27,12 @@ int main(int argc, char **argv)
   // when this compiled code is run, ROS will recognize it as a node called "minimal_wiringPi"
 
   ros::NodeHandle n; // need this to establish communications with our new node
-  ros::Subscriber sub = n.subscribe("Servo_POS", 1000, chatterCallback);
+  ros::Subscriber sub = n.subscribe("/Servo_POS", 1000, chatterCallback);
 
+  wiringPiSetupGpio(); // Initalize Pi
+
+  pinMode (18, PWM_OUTPUT) ;
+  pwmSetMode (PWM_MODE_MS);
 
   // 50Hz ---> 20ms per cycle. 20ms / 200 units = 0.1ms per unit
   //pwmWrite(18,15); // 1.5 ms (0 degrees)
@@ -39,6 +41,7 @@ int main(int argc, char **argv)
 
   while(ros::ok())
   {
+      pwmWrite(18,pos);
 
   }
   //delay(1000);
