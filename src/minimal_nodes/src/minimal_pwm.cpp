@@ -8,10 +8,10 @@ using namespace std;
 
 int pos = 0;
 
-void chatterCallback(const std_msgs::UInt16::ConstPtr& msg)
+void myCallback(const std_msgs::UInt16& message_holder)
 {
-  cout << "I heard: " << msg->data << endl;
-  pos = msg->data;
+  cout << "I heard: " << message_holder.data << endl;
+  pos = message_holder.data;
 }
 
 int main(int argc, char **argv)
@@ -27,12 +27,12 @@ int main(int argc, char **argv)
   // when this compiled code is run, ROS will recognize it as a node called "minimal_wiringPi"
 
   ros::NodeHandle n; // need this to establish communications with our new node
-  ros::Subscriber sub = n.subscribe("/Servo_POS", 1000, chatterCallback);
+  ros::Subscriber my_subscriber_object= n.subscribe("Servo_POS",1,myCallback);
 
-  wiringPiSetupGpio(); // Initalize Pi
+  //wiringPiSetupGpio(); // Initalize Pi
 
-  pinMode (18, PWM_OUTPUT) ;
-  pwmSetMode (PWM_MODE_MS);
+  //pinMode (18, PWM_OUTPUT) ;
+  //pwmSetMode (PWM_MODE_MS);
 
   // 50Hz ---> 20ms per cycle. 20ms / 200 units = 0.1ms per unit
   //pwmWrite(18,15); // 1.5 ms (0 degrees)
@@ -46,3 +46,7 @@ int main(int argc, char **argv)
   //pwmWrite(18,10); // 1.0 ms (-90 degrees)
   return 0;
 }
+
+
+
+

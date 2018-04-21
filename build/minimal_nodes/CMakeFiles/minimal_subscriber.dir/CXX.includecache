@@ -9,7 +9,9 @@
 /home/lauro199471/catkin_ws/src/minimal_nodes/src/minimal_subscriber.cpp
 ros/ros.h
 -
-std_msgs/Float64.h
+std_msgs/UInt16.h
+-
+iostream
 -
 
 /opt/ros/kinetic/include/ros/advertise_options.h
@@ -658,7 +660,7 @@ ros/forwards.h
 
 /opt/ros/kinetic/include/rosconsole/macros_generated.h
 
-/opt/ros/kinetic/include/std_msgs/Float64.h
+/opt/ros/kinetic/include/std_msgs/UInt16.h
 string
 -
 vector

@@ -58,7 +58,7 @@ CMakeFiles/minimal_subscriber.dir/src/minimal_subscriber.cpp.o: /opt/ros/kinetic
 CMakeFiles/minimal_subscriber.dir/src/minimal_subscriber.cpp.o: /opt/ros/kinetic/include/ros/wall_timer.h
 CMakeFiles/minimal_subscriber.dir/src/minimal_subscriber.cpp.o: /opt/ros/kinetic/include/ros/wall_timer_options.h
 CMakeFiles/minimal_subscriber.dir/src/minimal_subscriber.cpp.o: /opt/ros/kinetic/include/rosconsole/macros_generated.h
-CMakeFiles/minimal_subscriber.dir/src/minimal_subscriber.cpp.o: /opt/ros/kinetic/include/std_msgs/Float64.h
+CMakeFiles/minimal_subscriber.dir/src/minimal_subscriber.cpp.o: /opt/ros/kinetic/include/std_msgs/UInt16.h
 CMakeFiles/minimal_subscriber.dir/src/minimal_subscriber.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h
 CMakeFiles/minimal_subscriber.dir/src/minimal_subscriber.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcValue.h
 
