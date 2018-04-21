@@ -1,0 +1,14 @@
+[35m[1mScanning dependencies of target minimal_pwm[0m
+[ 14%] Built target xbox_to_pwm
+[ 28%] Built target minimal_wiringPi
+[ 57%] Built target minimal_publisher
+[ 57%] Built target minimal_simulator
+[ 64%] [32mBuilding CXX object CMakeFiles/minimal_pwm.dir/src/minimal_pwm.cpp.o[0m
+[ 78%] Built target minimal_subscriber
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/usr/local/lib/libwiringPi.so: not a directory
+[ 92%] Built target minimal_controller
+[01m[K/home/lauro199471/catkin_ws/src/minimal_nodes/src/minimal_pwm.cpp:5:29:[m[K [01;35m[Kwarning: [m[Kextra tokens at end of #include directive
+ #include <std_msgs/UInt16.h>.h>
+[01;32m[K                             ^[m[K
+[100%] [32m[1mLinking CXX executable minimal_pwm[0m
+[100%] Built target minimal_pwm

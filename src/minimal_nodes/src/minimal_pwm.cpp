@@ -2,15 +2,15 @@
 #include <wiringPi.h> // Include wiringPi Library
 #include <iostream>
 #include <softPwm.h>
-#include <std_msgs/UInt16.h>.h>
+#include <std_msgs/UInt16.h>
 
 using namespace std;
 
 
 void chatterCallback(const std_msgs::UInt16::ConstPtr& msg)
 {
-  ROS_INFO("I heard: [%s]", msg->data);
- pwmWrite(18,msg->data);
+  cout << "I heard: " << msg->data << endl;
+  pwmWrite(18,msg->data);
 }
 
 int main(int argc, char **argv)

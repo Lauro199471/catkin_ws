@@ -1,0 +1,4 @@
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/usr/local/lib/libwiringPi.so: not a directory
+[01m[K/home/lauro199471/catkin_ws/src/minimal_nodes/src/minimal_pwm.cpp:5:29:[m[K [01;35m[Kwarning: [m[Kextra tokens at end of #include directive
+ #include <std_msgs/UInt16.h>.h>
+[01;32m[K                             ^[m[K
