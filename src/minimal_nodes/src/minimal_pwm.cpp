@@ -20,8 +20,8 @@ int main(int argc, char **argv)
 
   //pwmFrequency in Hz = 19.2e6 Hz / pwmClock / pwmRange.
 
-  pwmSetRange (2000);
-  pwmSetClock (192);
+  pwmSetRange (200);
+  pwmSetClock (1920);
 
   // 50Hz ---> 20ms per cycle. 20ms / 200 units = 0.1ms per unit
   pwmWrite(18,15); // 1.5 ms (0 degrees)
