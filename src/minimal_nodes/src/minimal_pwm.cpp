@@ -25,11 +25,11 @@ int main(int argc, char **argv)
 
   // 50Hz ---> 20ms per cycle. 20ms / 200 units = 0.1ms per unit
   pwmWrite(18,15); // 1.5 ms (0 degrees)
-  delay(1000);
-  pwmWrite(18,20); // 2.0 ms (90 degrees)
-  delay(1000);
-  pwmWrite(18,15); // 1.5 ms (0 degrees)
-  delay(1000);
-  pwmWrite(18,10); // 1.0 ms (-90 degrees)
+  delay(5000);
+  pwmWrite(18,25); // 2.0 ms (90 degrees)
+  //delay(1000);
+  //pwmWrite(18,15); // 1.5 ms (0 degrees)
+  //delay(1000);
+  //pwmWrite(18,10); // 1.0 ms (-90 degrees)
   return 0;
 }
