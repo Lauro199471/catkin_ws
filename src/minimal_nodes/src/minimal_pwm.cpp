@@ -1,41 +1,50 @@
-#include<ros/ros.h>
-#include<std_msgs/UInt16.h>
+#include<ros/ros.h>   // Include ROS Library
+#include <wiringPi.h> // Include wiringPi Library
 #include <iostream>
-#include <wiringPi.h>
+#include <softPwm.h>
+#include <std_msgs/UInt16.h>
 
 using namespace std;
 
 int pos = 0;
+
 void myCallback(const std_msgs::UInt16& message_holder)
 {
-  cout << "Recieved: " << message_holder.data << endl;
+  cout << "I heard: " << message_holder.data << endl;
   pos = message_holder.data;
 }
 
 int main(int argc, char **argv)
 {
-  ros::init(argc,argv,"minimal_pwm"); //name this node
-  ros::NodeHandle n; // need this to establish communications with our new node
+  cout << "Raspberry Pi wiringPi test program\n";
 
+
+
+
+  ros::init(argc,argv,"minimal_pwm"); //name this node
+  // when this compiled code is run, ROS will recognize it as a node called "minimal_wiringPi"
+
+  ros::NodeHandle n; // need this to establish communications with our new node
   ros::Subscriber my_subscriber_object= n.subscribe("Servo_POS",1,myCallback);
 
-  wiringPiSetup();
-  pinMode(18,OUTPUT);
+  wiringPiSetupGpio(); // Initalize Pi
 
-  pwmSetMode(PWM_MODE_MS);
+  pinMode (18, PWM_OUTPUT) ;
+  pwmSetMode (PWM_MODE_MS);
 
-  //clock at 50Hz (20ms tick)... pwmFrequency in Hz = 19.2e6 Hz / pwmClock / pwmRange.
-  pwmSetClock(192);
-  pwmSetRange(2000); //range at 2000 ticks =>0.04ms per ticks
-  pwmWrite(18, 150); // .004 * 150 = .6ms
+  //pwmFrequency in Hz = 19.2e6 Hz / pwmClock / pwmRange.
+  // 50Hz ---> 20ms per cycle. 20ms / 200 units = 0.1ms per unit
+   pwmSetRange (2000);
+   pwmSetClock (192);
 
-  ros::Rate r(10); // 10 hz
-  while(ros::ok())
-  {
 
-    ros::spinOnce();
-    r.sleep();
-  }
+  pwmWrite(18,15); // 1.5 ms (0 degrees)
+  delay(5000);
+  pwmWrite(18,25); // 2.0 ms (90 degrees)
 
-  return 0; // should never get here, unless roscore dies
+  return 0;
 }
+
+
+
+

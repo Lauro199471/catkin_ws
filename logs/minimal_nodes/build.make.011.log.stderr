@@ -1,19 +1,1 @@
 [01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/usr/local/lib/libwiringPi.so: not a directory
-[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/usr/local/lib/libwiringPi.so: not a directory
-[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/usr/local/lib/libwiringPi.so: not a directory
-[01m[K/home/lauro199471/catkin_ws/src/minimal_nodes/src/minimal_pwm.cpp:8:28:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ does not name a type
- void chatterCallback(const sensor_msgs::Joy::ConstPtr& msg)
-[01;32m[K                            ^[m[K
-[01m[K/home/lauro199471/catkin_ws/src/minimal_nodes/src/minimal_pwm.cpp:8:44:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
- void chatterCallback(const sensor_msgs::Joy::ConstPtr& msg)
-[01;32m[K                                            ^[m[K
-[01m[K/home/lauro199471/catkin_ws/src/minimal_nodes/src/minimal_pwm.cpp:8:44:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
-[01m[K/home/lauro199471/catkin_ws/src/minimal_nodes/src/minimal_pwm.cpp:8:44:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K::[m[K’ token
-[01m[K/home/lauro199471/catkin_ws/src/minimal_nodes/src/minimal_pwm.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
-[01m[K/home/lauro199471/catkin_ws/src/minimal_nodes/src/minimal_pwm.cpp:20:50:[m[K [01;31m[Kerror: [m[K‘[01m[KchatterCallback[m[K’ was not declared in this scope
-   ros::Subscriber sub = n.subscribe("joy", 1000, chatterCallback);
-[01;32m[K                                                  ^[m[K
-make[2]: *** [CMakeFiles/minimal_pwm.dir/src/minimal_pwm.cpp.o] Error 1
-make[1]: *** [CMakeFiles/minimal_pwm.dir/all] Error 2
-make[1]: *** Waiting for unfinished jobs....
-make: *** [all] Error 2
