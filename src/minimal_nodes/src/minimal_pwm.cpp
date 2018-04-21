@@ -39,11 +39,7 @@ int main(int argc, char **argv)
   //delay(5000);
   //pwmWrite(18,25); // 2.0 ms (90 degrees)
 
-  while(ros::ok())
-  {
-      pwmWrite(18,pos);
-
-  }
+  ros::spin();
   //delay(1000);
   //pwmWrite(18,15); // 1.5 ms (0 degrees)
   //delay(1000);

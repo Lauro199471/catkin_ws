@@ -1,5 +1,5 @@
 #include <ros/ros.h>
-#include <std_msgs/UInt16.h>.h>
+#include <std_msgs/UInt16.h>
 
 int main(int argc, char **argv) {
     ros::init(argc, argv, "minimal_publisher"); // name of this node will be "minimal_publisher"
