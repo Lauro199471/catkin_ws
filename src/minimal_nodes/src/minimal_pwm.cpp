@@ -38,9 +38,9 @@ int main(int argc, char **argv)
    pwmSetClock (192);
 
 
-  pwmWrite(18,15); // 1.5 ms (0 degrees)
+  pwmWrite(18,150); // 1.5 ms (0 degrees)
   delay(5000);
-  pwmWrite(18,25); // 2.0 ms (90 degrees)
+  pwmWrite(18,250); // 2.0 ms (90 degrees)
 
   return 0;
 }
