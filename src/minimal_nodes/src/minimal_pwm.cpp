@@ -11,7 +11,7 @@ int pos = 150;
 void myCallback(const std_msgs::UInt16& message_holder)
 {
   cout << "I heard: " << message_holder.data << endl;
-  //pos = message_holder.data;
+  pos = message_holder.data;
 }
 
 int main(int argc, char **argv)
@@ -39,9 +39,16 @@ int main(int argc, char **argv)
 
 
   pwmWrite(18,pos); // 1.5 ms (0 degrees) 150 * .01ms = 1.5ms
-  //delay(5000);
-  //pwmWrite(18,250); // 2.0 ms (90 degrees)
-  ros::spin();
+  delay(2000);
+  pwmWrite(18,250); // 2.0 ms (90 degrees)
+
+  ros::Rate r(10); // 10 hz
+   while(ros::ok())
+   {
+     pwmWrite(18,pos);
+     ros::spinOnce();
+     r.sleep();
+   }
 
   pwmWrite(18,0); // 0 * .01ms = 0ms
 
