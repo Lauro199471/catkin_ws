@@ -7,7 +7,7 @@
 using namespace std;
 
 int pos = 150;
-
+double eq_pos = 0;
 void myCallback(const std_msgs::UInt16& message_holder)
 {
   cout << "I heard: " << message_holder.data << endl;
@@ -45,7 +45,8 @@ int main(int argc, char **argv)
   ros::Rate r(10); // 10 hz
    while(ros::ok())
    {
-     pwmWrite(18,pos);
+     eq_pos = (0.963*pos) + 74.9;
+     pwmWrite(18,eq_pos);
      ros::spinOnce();
      r.sleep();
    }
