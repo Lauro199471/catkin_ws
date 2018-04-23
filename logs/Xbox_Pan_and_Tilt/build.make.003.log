@@ -1,0 +1,7 @@
+[35m[1mScanning dependencies of target xbox_publisher[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/xbox_publisher.dir/src/xbox_publisher.cpp.o[0m
+[ 50%] Built target xbox_to_pwm
+[ 83%] Built target minimal_pwm
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/usr/local/lib/libwiringPi.so: not a directory
+[100%] [32m[1mLinking CXX executable xbox_publisher[0m
+[100%] Built target xbox_publisher

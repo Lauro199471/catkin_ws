@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -g  -shared -Wl,-soname,libgtest.so -o libgtest.so CMakeFiles/gtest.dir/src/gtest-all.cc.o  -L/home/lauro199471/catkin_ws/build/ps3joy/gtest/gtest/src -lpthread -Wl,-rpath,/home/lauro199471/catkin_ws/build/ps3joy/gtest/gtest/src 
