@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.5.1, 2018-04-18T04:31:23. -->
+<!-- Written by QtCreator 4.5.1, 2018-04-23T00:54:33. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -118,7 +118,7 @@
      <value type="QString">ROS_DISTRO=kinetic</value>
      <value type="QString">ROS_ETC_DIR=/opt/ros/kinetic/etc/ros</value>
      <value type="QString">ROS_MASTER_URI=http://localhost:11311</value>
-     <value type="QString">ROS_PACKAGE_PATH=/home/lauro199471/catkin_ws/src/HelloWorld:/home/lauro199471/catkin_ws/src/joystick_drivers/joy:/home/lauro199471/catkin_ws/src/joystick_drivers/joystick_drivers:/home/lauro199471/catkin_ws/src/led_xbox:/home/lauro199471/catkin_ws/src/minimal_nodes:/home/lauro199471/catkin_ws/src/joystick_drivers/ps3joy:/home/lauro199471/catkin_ws/src/joystick_drivers/spacenav_node:/opt/ros/kinetic/share</value>
+     <value type="QString">ROS_PACKAGE_PATH=/home/lauro199471/catkin_ws/src/joystick_drivers/joy:/home/lauro199471/catkin_ws/src/joystick_drivers/joystick_drivers:/home/lauro199471/catkin_ws/src/minimal_nodes:/home/lauro199471/catkin_ws/src/joystick_drivers/ps3joy:/opt/ros/kinetic/share</value>
      <value type="QString">ROS_ROOT=/opt/ros/kinetic/share/ros</value>
      <value type="QString">ROS_VERSION=1</value>
      <value type="QString">SHLVL=2</value>
